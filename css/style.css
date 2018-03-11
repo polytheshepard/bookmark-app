@@ -1,0 +1,178 @@
+h1, h2, p, label {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: #696969;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+#form {
+  background-color: #e0dcdd;
+  padding: 5em;
+  text-align: center;
+  border-radius: 5px;
+  width: 30em;
+  margin: auto;
+  box-shadow: 1px 2px 2px #a09797; 
+}
+
+label {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.input-group {
+  padding-bottom: 10px;
+}
+
+input[type=text] {
+  width: 15em;
+  height: 2em;
+  border-radius: 3px;
+  border: #a09797 solid 1px;
+  padding: 0 10px;
+}
+
+/*Chrome/Opera/Safari
+input[type=text]::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+Firefox 19+
+input[type=text]::-moz-input-placeholder {
+  padding-left: 10px;
+}
+
+IE 10+
+input[type=text]:-ms-input-input-placeholder {
+  padding-left: 10px;
+}
+
+Firefox 18-
+input[type=text]:-moz-input-placeholder {
+  padding-left: 10px;
+}*/
+
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  width: 15em;
+  font-size: 20px;
+  background-color: #e4cb4d;
+  border: #d0bb53 solid 1px;
+  height: 3em;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px #a09797; 
+  cursor: pointer;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #eac233;
+  border: 1px solid #eac233;
+}
+
+.bookmark-group {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: auto;
+  width: auto;
+  background-color: #686369;
+  color: #e0dcdd;
+  border-radius: 2px;
+  box-shadow: 1px 2px 2px #a09797;
+  padding: 3em;
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.bookmark-group > button {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 1px 2px 2px #1b1b1b;
+  width: 5em;
+  font-size: 18px;
+  margin: 0 10px;
+  transition-duration: 0.5s;
+}
+
+/* Specifies the first button of bookmark-group*/
+.bookmark-group > button:nth-child(2) {
+  background-color: #df6e1e;
+  border: 1px solid #d15e0c;
+}
+
+.bookmark-group > button:nth-child(2):hover {
+  background-color: #d15e0c;
+}
+
+/* Specifies the second button for bookmark-group*/
+.bookmark-group > button:nth-child(3) {
+  background-color: #ad1d28;
+  border: 1px solid #a3000c;
+}
+
+.bookmark-group > button:nth-child(3):hover {
+  background-color: #a3000c; 
+}
+
+footer {
+  color: #7a7a7a;
+}
+
+/* Errors */
+#errorFillform, #errorSite, #errorURL, #errorRegURL {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ff0000;
+  text-align: left;
+}
+
+/*Enlarges text and input in mobile*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  h1, h2 {
+    font-size: 50px;
+    text-align: left;
+  }
+  
+  p, label {
+    font-size: 30px;
+    display: inline;
+  }
+
+  body {
+    background-color: #e0dcdd;
+  }
+
+  input[type=text] {
+    width: 20em;
+    height: 4em;
+    font-size: 25px;
+  }
+
+  button {
+    width: 17em;
+    font-size: 30px;
+  }
+}

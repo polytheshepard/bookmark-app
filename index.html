@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, intial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Website Bookmarker</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body onload='fetchBookmarks()'>
+    <h1>Website Bookmarker</h1>
+    <form id='form' onsubmit='return validateBookmarks()'>
+    <span id='errorFillform'></span>
+    <h2>Bookmark your Favourite Sites</h2>
+    <div class='input-group'>
+      <label>Site Name</label>
+      <input type='text' id='siteName' placeholder='Website Name'>
+      <br>
+      <span id='errorSite'></span>
+    </div>
+    <br>
+    <div class='input-group'>
+      <label>Site URL</label>
+      <input type='text' id='siteURL' placeholder='URL Name'>
+      <br>
+      <span id='errorURL'></span>
+      <span id='errorRegURL'></span>
+      <br>
+      <button type='submit'>Submit</button>
+    </div>
+    </form>
+     <div id='bookMarkResults'></div>
+     <footer>
+       <p>&copy Bookmarker 2018</p>
+     </footer>
+     <script src='js/main.js'></script>
+   </body>
+</html>
