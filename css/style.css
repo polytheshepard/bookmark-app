@@ -28,6 +28,11 @@ h3 {
   box-shadow: 1px 2px 2px #a09797; 
 }
 
+.fa-heart:before {
+  color: rgba(255, 0, 0, 0.5);
+  font-size: 40px;
+}
+
 label {
   font-size: 16px;
   display: inline-block;
@@ -99,6 +104,12 @@ button:hover {
   box-shadow: 1px 2px 2px #a09797;
   padding: 3em;
   margin: 30px 0;
+  animation: fade 1s ease-in;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  70% { opacity: 1 }
 }
 
 a {
@@ -151,9 +162,23 @@ footer {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+  html {
+    margin: auto;
+    width: fit-content;
+  }
+
+  #form {
+    box-shadow: none;
+  }
+
   h1, h2 {
     font-size: 50px;
-    text-align: left;
+    text-align: center;
+  }
+
+  h1 {
+    margin: auto;
   }
   
   p, label {
