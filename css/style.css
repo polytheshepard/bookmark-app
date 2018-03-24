@@ -170,7 +170,8 @@ p {
   position: relative;
   bottom: -610px;
   margin-bottom: 25px;
-  margin-left: 20px;
+  margin-left: 30px;
+  color: #000;
 }
 
 footer {
@@ -219,6 +220,11 @@ canvas {
 
   #form {
     box-shadow: none;
+    position: unset;
+  }
+
+  .bookmark-group {
+    top: 100px;
   }
 
   h1, h2 {
@@ -235,6 +241,12 @@ canvas {
     display: inline;
   }
 
+  p {
+    font-size: 35px;
+    bottom: -122px;
+    margin-left: 50px;
+  }
+
   body {
     background-color: #e0dcdd;
   }
@@ -248,5 +260,12 @@ canvas {
   button {
     width: 17em;
     font-size: 30px;
+  }
+
+  /* Particles JS */
+  #particles-js {
+    position: unset;
+    width: 100%;
+    height: 200px;
   }
 }
